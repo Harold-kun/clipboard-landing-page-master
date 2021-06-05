@@ -29,7 +29,7 @@ ul {
 }
 
 .padding-top {
-    margin-top: 10rem;
+    padding-top: 5rem;
 }
 
 .flex-jus-cen {
@@ -43,16 +43,14 @@ ul {
 }
 
 .hero {
-    background-color: rgba(0, 0, 0, 0.733);
-
-    &__bg-img {
-        width: 100%;
-        position: absolute;
-    }
+    background: url(../images/bg-header-mobile.png) no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    mask-image: linear-gradient(white, white, white, white, transparent);
 
     &__logo-img {
-        padding: 8rem 0 5rem;
-        width: 180px;
+        padding: 8rem 0;
+        width: 150px;
     }
 }
 
@@ -165,6 +163,7 @@ ul {
     }
 
     .wrapper {
+        padding-top: 0;
         &--responsive {
             max-width: 690px;
             margin: auto;
@@ -180,6 +179,19 @@ ul {
         padding: 2rem 0rem;
         gap: 100px;
         justify-content: center;
+    }
+
+    .padding-top {
+        padding-top: 0;
+    }
+
+    .hero {
+        background: url(../images/bg-header-desktop.png) no-repeat;
+        background-size: cover;
+
+        &__logo-img {
+            padding: 4rem 0 2rem;
+        }
     }
 
     .article {
